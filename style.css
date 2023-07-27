@@ -1,0 +1,716 @@
+/* Start Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+/* End Google Fonts */
+
+
+/* Start NavBar */
+
+nav {
+    transition: all 300ms ease-in-out!important;
+}
+
+.logo-color {
+    color: #FF305B;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.logo-color:hover {
+    color: #FF305B;
+}
+
+.text-color {
+    padding-right: .5rem;
+}
+
+.text-color a {
+    color: #fff!important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    transition: color .3s ease-in-out;
+}
+
+.text-color a:hover {
+    color: #FF305B!important;
+}
+
+.text-color .active {
+    color: #FF305B!important;
+}
+
+/* Scroll-Down & Up */
+
+.scroll-down nav {
+	transform: translate3d(0, -100%, 0);
+    
+}
+
+
+.scroll-up nav {
+    background-color: #333333;
+}
+
+
+/* End NavBar */
+
+
+
+/* Start Header */
+
+header {
+    background-image: url("image/slider-02.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+header .overlay-bg {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+}
+
+header .header-info .first-span {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.65rem;
+    color: #fff;
+}
+
+header .header-info h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 4.375rem;
+    color: #FF305B;
+    line-height: 4.813rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    text-transform: uppercase;
+}
+
+header .header-info .second-span {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.95rem;
+    color: #fff;
+}
+
+/* End Header */
+
+
+/* Start CV Section */
+
+.img img {
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img .border {
+    position: relative;
+    overflow: hidden;
+}
+
+.img .hovering-icons {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.57);
+    top: 120%;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    border-radius: 5px;
+    transition: top .5s ease-in-out;
+}
+
+.img .hovering-icons .icons {
+    position: absolute;
+    top: 50%;
+    left: 34%;
+    cursor: pointer;
+} 
+
+.img .border:hover .hovering-icons {
+    top: 0;
+}
+
+.img .icons ul {
+    display: flex;
+    list-style: none;
+    color: #fff!important;
+}
+
+.img .icons ul li {
+    color: #fff!important;
+    padding-right: 15px;
+    font-size: 20px;
+    transition: color .3s ease-in-out;
+}
+
+.img .icons ul li:hover {
+    color: #FF305B;
+}
+
+.cv-info {
+    padding-left: 50px;
+}
+
+.cv-info h1 {
+    color: #333333;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    line-height: 22px;
+    border-left: 5px solid #FF305B; 
+    padding-left: 12px;
+    text-transform: uppercase;
+}
+
+.cv-info .info-p {
+    color: #555555;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    padding-top: 23px;
+    border-bottom: 1px dashed #999999;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+.cv-info ul {
+    list-style: none;
+    margin-top: 30px;
+    padding: 0!important;
+}
+
+.cv-info ul li {
+    float: left;
+    width: 40%;
+    color: #555555;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    padding-bottom: 28px;
+}
+
+.cv-info ul li span {
+    color: #333333;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+}
+
+.cv-info .btn {
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    background-color: #FF2F5B;
+    border: 1px solid #FF2F5B;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: all .4s ease-in-out;
+    margin-right: 10px;
+}
+
+.cv-info .btn:hover {
+    background-color: #EC2404;
+    border: 1px solid #EC2404;
+}
+
+@media all and (min-width: 500px) and (max-width: 556px) {
+
+    .img {
+        overflow: hidden;
+    }
+    .img .border {
+        margin: 20px;
+        overflow: hidden;
+    }
+    
+    .img .border:before {
+        display: none;
+    } 
+
+    .col-md-offset-1 {
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .cv-info {
+        padding-left: 30px;
+    }
+
+    .cv-info ul li {
+        float: none;
+    }
+    
+}
+
+/* End CV Section */
+
+
+/* Start Services */
+
+.sct {
+    background-color: #F1F1F1;
+}
+
+.scale .icon {
+    color: #ff305b;
+    font-size: 1.5rem!important;
+    transition: all 0.5s  linear ;
+    margin: 10px 0!important;
+}
+
+.sc {
+    padding: 20px 10px;
+    transition: all .3s ease-in-out 0s;
+}
+
+.sc:hover {
+    background-color: #fff;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.075), 0 6px 20px 0 rgba(0, 0, 0, 0.075);
+    border-radius: 3px;
+}
+
+.service-info h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 24px;
+    line-height: 26.4px;
+    font-weight: 600;
+    color: #333333;
+    padding-top: 20px;
+}
+
+.service-info p {
+    color:#555555;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    padding: 10px 15px;
+}
+
+.parent .service-info .service-box i {
+    color: #ff305b;
+    font-size: 30px;
+    padding-bottom: 20px;
+    transition: all .3s ease-in-out 0s;
+}
+
+.scale{
+    transition: transform 0.5s ease-in-out;
+}
+
+.service-info:hover .scale{
+   transform: scale(1.2 , 1.2);
+}
+
+.title h2 {
+    color: #333333;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 800;
+    position: relative;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+}
+
+.title h2:before {
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: -19px;
+    padding: 4px 0 5px;
+    width: 8%;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+}
+
+.title h2:after {
+    border-bottom: 1px solid #FF2F5B;
+    content: '';
+    position: absolute;
+    top: 111%;
+    width: 14%;
+    left: 43%;
+}
+
+/* End Services */
+
+
+/* Start Portfolio */
+
+.ico {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.57);
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.item:hover .ico {
+    opacity: 1;
+}
+
+.item .ico svg {
+    position: absolute;
+    color: #ff305b;
+    z-index: 5;
+    bottom: 13px;
+    right: 15px;
+    width: 1.5rem!important;
+    height: 1.5rem!important;
+    cursor: pointer;
+}
+
+.nav-pills .nav-link {
+    cursor: pointer;
+    color: #555!important;
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    cursor: pointer;
+    color: #ff305b!important;
+    transition: all 0.2s ease-in-out;
+}
+
+/* End Portfolio */
+
+/* Start Counting */
+
+.count-sec {
+    background-color: #F1F1F1;
+    text-align: center;
+}
+
+.boot {
+    width: 2rem!important;
+    height: 2rem!important;
+    color: #ff305b;
+}
+
+.counting .count {
+    margin-top: 100px;
+}
+
+.counter-item .count i {
+    color: #ff305b;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.counter-item .count h2 {
+    color: #333333;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 26px;
+    line-height: 28.6px;
+    font-weight: 800;
+    padding: 10px 0;
+}
+
+.counter-item .count p {
+    color: #555555;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 17.6px;
+    font-weight: 600;
+}
+
+.counter-space {
+    padding-bottom: 2rem!important;
+}
+
+/* End Counting */
+
+/* Start Blog */
+
+.Blog {
+    background-color: #F1F1F1;
+}
+
+.Blog .blog-title h2 {
+    color: #333333;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 40px;
+    line-height: 30px;
+    font-weight: 800;
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    margin-top: 100px;
+}
+
+.blog-title h2:before {
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: -19px;
+    padding: 4px 0 5px;
+    width: 70px;
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+}
+
+.blog-title h2:after {
+    border-bottom: 2px solid #FF2F5B;
+    content: '';
+    position: absolute;
+    top: 129%;
+    width: 160px;
+    left: 43%;
+}
+
+.Blog .blog-info {
+    background-color: #fff;
+    margin: 10px 12px;
+}
+
+.Blog .blog-info p {
+    color: #555555;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 15px;
+}
+
+.Blog .blog-info h3 {
+    color: #333333;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 26.4px;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+    padding-left: 15px;
+}
+
+.Blog .blog-info h3:hover {
+    color: #ff305b;
+}
+
+.Blog .blog-info span {
+    color: #555555;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    padding-left: 15px;
+    transition: color .3s ease-in-out;
+    cursor: pointer;
+}
+
+.Blog .blog-info span:hover {
+    color: #ff305b;
+}
+
+/* End Blog */
+
+
+/* Start Testimonial */
+
+.caro {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.carousel-indicators button{
+    border-radius: 50%;
+    width: 12px !important;
+    height: 12px !important;
+    background-color: #FF2F5B!important;
+}
+
+.carousel-img {
+    width: 100px;
+    margin: auto;
+}
+
+.carousel-h3 {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    font-family: "Segoe UI";
+    margin: 1rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #333333!important;
+}
+
+.carousel-p {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    color: #555555!important;
+}
+
+
+/* End Testimonial */
+
+
+/* Start Footer */
+
+footer{
+    background-color: #333333;
+}
+
+footer {
+    cursor: pointer;
+}
+
+footer ul i {
+    color: #fff;
+    transition: color .3s ease-in-out;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+footer ul i:hover {
+    color: #FF305B;
+}
+
+p{
+   margin-top: 10px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   color: white;
+}
+
+p span{
+    color: #FF305B;
+    cursor: pointer;
+}
+
+footer p span:hover {
+    text-decoration: underline;
+    color: #FF305B;
+}
+
+.btn {
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    background-color: #FF2F5B;
+    border: 1px solid #FF2F5B;
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: all .4s ease-in-out;
+}
+
+.btn:hover {
+    color: #FFFFFF!important;
+    background-color: #EC2404;
+    border: 1px solid #EC2404;
+    cursor: not-allowed;
+}
+
+/* End Footer */
+
+
+/* Media Query */
+
+@media all and (max-width: 500px) {
+    .burger-nav {
+        color: #fff!important;
+        
+    }
+
+    .cv-info {
+        padding-left: 0;
+    }
+
+    .test {
+        margin: auto!important;
+    }
+
+    .bl {
+        padding: 1rem!important;
+    }
+
+    header .header-info h1 {
+        font-size: 2.5rem;
+    }
+
+    header .header-info .first-span {
+        font-size: 1rem;
+    }
+    
+    header .header-info .second-span {
+        font-size: 1rem;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width: 992px) {
+
+    .burger-nav {
+        color: #fff!important;
+        
+    }
+
+    .cv-info {
+        padding-left: 20px!important;
+    }
+
+    .test {
+        margin: auto!important;
+    }
+
+    .bl {
+        padding: 1rem!important;
+    }
+
+    header .header-info h1 {
+        font-size: 2.5rem;
+    }
+
+    header .header-info .first-span {
+        font-size: 1rem;
+    }
+    
+    header .header-info .second-span {
+        font-size: 1rem;
+    }
+}
+
+
